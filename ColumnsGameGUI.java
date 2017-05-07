@@ -156,6 +156,7 @@ public class ColumnsGameGUI {
         keyPanel.remove(rightPanel);
         nextPiecePanel.removeAll();
         nextPiecePanel.add(nextPieceLabel);
+        scoreLabel.setText("Your score is " + gameState.score);
         for(int i = 0; i < 3; i++){
             char boardChar = gameState.nextPiece.pieceArray[i];
             JPanel additionPanel = new JPanel();
